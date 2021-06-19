@@ -1,0 +1,59 @@
+object Form1: TForm1
+  Left = 800
+  Height = 313
+  Top = 273
+  Width = 819
+  Caption = 'Программа синтаксического анализа "Декларирование простых переменных языка PASCAL"'
+  ClientHeight = 313
+  ClientWidth = 819
+  DesignTimePPI = 90
+  LCLVersion = '2.0.12.0'
+  object Memo1: TMemo
+    Left = 16
+    Height = 115
+    Top = 32
+    Width = 792
+    Color = clWhite
+    Lines.Strings = (
+      'Memo1'
+    )
+    OnChange = Memo1Change
+    TabOrder = 0
+  end
+  object Button1: TButton
+    Left = 16
+    Height = 23
+    Top = 0
+    Width = 80
+    Caption = 'Загрузить'
+    OnClick = Button1Click
+    TabOrder = 1
+  end
+  object Button2: TButton
+    Left = 104
+    Height = 23
+    Top = 0
+    Width = 86
+    Caption = 'Проверить'
+    OnClick = Button2Click
+    TabOrder = 2
+  end
+  object Memo2: TMemo
+    Left = 16
+    Height = 136
+    Top = 160
+    Width = 792
+    Color = clBtnHighlight
+    Lines.Strings = (
+      'Memo2'
+    )
+    OnChange = Memo2Change
+    ReadOnly = True
+    TabOrder = 3
+  end
+  object OpenDialog1: TOpenDialog
+    FileName = '/home/sergay/Documents/temp/Технология разработки программного обеспечения/Piece_of_pascal/tmp.pas'
+    InitialDir = '/home/sergay/Documents/temp/Технология разработки программного обеспечения/Piece_of_pascal/'
+    Left = 544
+  end
+end
